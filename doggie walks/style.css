@@ -1,0 +1,402 @@
+/* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 500px 500px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "logo navbar navbar navbar"
+  "header header header header"
+  "slogan slogan slogan slogan"
+  "content content content content"
+  "footer footer footer footer";
+}
+
+body {
+  background-image: url("website-images/rsz_background1.png");
+  background-size: auto;
+}
+
+.logo {
+  grid-area: logo;
+  padding-left: 8em;
+}
+
+#logo {
+  width: 230px;
+  height: 230px;
+}
+
+.navbar {
+  grid-area: navbar;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  width: 250px;
+  padding: 2em 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+a:hover {
+    position: relative;
+    color: grey;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+ a.two {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+
+.header {
+  grid-area: header;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 140px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.5)
+    ),url("website-images/banner.jpg");
+}
+
+h1 {
+  grid-area: header;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.slogan {
+  grid-area: slogan;
+  background-color: #ff704d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  grid-area: slogan;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.content {
+  grid-area: content;
+  margin-top: 2em;
+  margin-left: 2em;
+  text-align: center;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: black;
+  opacity: 0.4;
+}
+
+h3 {
+  grid-area: content;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.8em;
+  color: white;
+}
+
+
+
+li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.8em;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  line-height: 1.5em;
+  background-color: #ebebe0;
+  opacity: 0.8;
+}
+
+p1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+
+ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.8em;
+  color: black;
+  text-align: center;
+  float: center;
+}
+
+p2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  color: black;
+}
+
+
+@media screen  and (min-width: 736px) {
+  .grid {
+  display: grid;
+  grid-template-columns: 1fr 500px 500px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "logo navbar navbar navbar"
+  "header header header header"
+  "slogan slogan slogan slogan"
+  "content content content content"
+  "footer footer footer footer";
+ }
+
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("website-images/rsz_background1.png");
+  background-size: 100%;
+}
+
+header { /* height of header, colour of text and alignment*/
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+    ),url("website-images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 40px 0;
+  height: 300px;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+h1 { /* size and position of header 1 */
+  font-size: 70px;
+  padding-top: 80px;
+}
+
+.slogan {
+  background-color: #ff704d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  padding-left: 1000px;
+}
+
+#logo {
+  width: 230px;
+  height: 230px;
+  padding-left: 740px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul { /* colour of text and background of nav bar */
+  overflow: hidden;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li:hover { /* colour of hover text */
+  color: #ff704d;
+}
+
+section {
+  line-height: 1.5em;
+  font-size: 0.9em;
+  padding: 10px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+section li {
+  color: white;
+  text-align: center;
+}
+
+section a { */ colour of a tag */
+  padding-top: 20px;
+  padding-left: 100px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+p1 {
+  font-size: 30px;
+}
+
+/* Styles the people and positions them on the page */
+.our-team {
+  max-width: 1100px;
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #EFEFEF;
+  padding: 0px 1px
+}
+
+.our-team > .team-member {
+  flex: 1;
+  min-width: 200px;
+  background-color: #FFF;
+  margin: 0px 1px;
+  text-align: center;
+}
+
+/* Styles the images specifically, makes them display as a circle */
+.our-team > .team-member > .image {
+  border: 4px solid #FFC87C;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px #333;
+  width: 150px;
+  height: 150px;
+}
+
+.our-team > .team-member > .image > IMG {
+  min-width: 150px;
+  min-height: 150px;
+  width: 150px;
+
+}
+
+/* Styles the names of the team  members */
+.our-team > .team-member > H3 {
+  margin-top: 20px;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+div.transbox { /* design for background of section text */
+  margin: 30px;
+  background-color: black;
+  opacity: 0.4;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  line-height: 1.5em;
+  background-color: #ebebe0;
+  opacity: 0.8;
+}
+
+footer ul { /* removes bullet points from footer list */
+  list-style-type: none;
+}
